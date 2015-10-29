@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mochawesome Report Card</title>
+    <link rel="stylesheet" href="css/mochawesome.css">
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="report-info-cnt">
+          <h1 class="report-title">mocha-webdriver-demo</h1>
+          <h3 class="report-date">Thursday, October 29 2015, 10:00am</h3>
+        </div>
+        <div class="quick-summary-cnt">
+            <ul class="list-unstyled quick-summary">
+              <li class="qs-item summary-duration" title="Duration">10.209<span>S</span></li>
+              <li class="qs-item summary-suites" title="Suites">1</li>
+              <li class="qs-item summary-tests" title="Tests">4</li>
+              <li class="qs-item summary-passes" title="Passed" data-filter="passed">4</li>
+              <li class="qs-item summary-failures" title="Failed" data-filter="failed">0</li>
+              <li class="qs-item summary-pending" title="Pending" data-filter="pending">0</li>
+            </ul>        </div>
+      </div>
+    </div>
+
+    <!-- Report Summary -->
+    <div class="summary">
+      <div class="container">
+          <div class="row">
+            <div class="summary-col summary-duration">
+              <h1 class="summary-count">10.209<span>S</span></h1>
+              <h4 class="summary-label">S</h4>
+            </div>
+            <div class="summary-col summary-suites" title="Suites">
+              <h1 class="summary-count">1</h1>
+              <h4 class="summary-label">Suite</h4>
+            </div>
+            <div class="summary-col summary-tests" title="Tests">
+              <h1 class="summary-count">4</h1>
+              <h4 class="summary-label">Tests</h4>
+            </div>
+            <div class="summary-col summary-passes" data-filter="passed" title="Passed">
+              <h1 class="summary-count">4</h1>
+              <h4 class="summary-label">Passed</h4>
+            </div>
+            <div class="summary-col summary-failures" data-filter="failed" title="Failed">
+              <h1 class="summary-count">0</h1>
+              <h4 class="summary-label">Failed</h4>
+            </div>
+            <div class="summary-col summary-pending" data-filter="pending" title="Pending">
+              <h1 class="summary-count">0</h1>
+              <h4 class="summary-label">Pending</h4>
+            </div>
+          </div>      </div>
+    </div>
+    <div class="statusbar">
+      <div class="container">
+          <div class="row">
+            <div class="status-item status-item-pending-pct">0% Pending</div>
+            <div class="status-item status-item-passing-pct success">100% Passing</div>
+          </div>      </div>
+    </div>
+
+    <!-- Suites -->
+    <div class="details container">
+            <section class="suite-wrap">
+          <div id="7db8c732-ce5a-476e-9086-1a0f496490b7" class="suite has-tests has-passed">
+            <h3 class="suite-title">Ad verification</h3>
+            <h5 class="suite-filename">/test/poc_scenarios.js</h5>
+            <!-- Suite Chart -->
+            <div class="suite-chart-wrap">
+              <canvas id="7db8c732-ce5a-476e-9086-1a0f496490b7" class="suite-chart" width="50" height="50" data-total-passes="4" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+            </div>
+            <div class="suite-data-wrap">
+              <!-- Suite Summary -->
+              <ul class="suite-summary list-unstyled">
+                <li class="suite-summary-item duration">9.245 s</li>
+                <li class="suite-summary-item tests">4</li>
+                <li class="suite-summary-item passed">4</li>
+                <li class="suite-summary-item failed">0</li>
+                <li class="suite-summary-item pending">0</li>
+              </ul>
+              <!-- Test Info -->
+              <div class="suite-test-wrap">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#7db8c732-ce5a-476e-9086-1a0f496490b7-test-list">
+                  <h4 class="suite-test-header-title">Tests</h4>
+                </div>
+                <div id="7db8c732-ce5a-476e-9086-1a0f496490b7-test-list" class="list-group test-list collapse in">
+                    <div id="d97d0744-93e6-4257-8889-933899503d99" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              home page should load in a timely manner
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#d97d0744-93e6-4257-8889-933899503d99 > .test-code.collapse">Code</button>
+              <span class="test-duration slow">8.988 s</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">driver.get(homePage);<br>driver.getTitle().then(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">title</span>) </span>{<br>    assert.equal(title, <span class="hljs-string">'AJC.com: Atlanta News, Sports, Atlanta Weather, Business News | www.tie3.ajc.com'</span>);<br>});</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>            <div id="326cc695-f9ad-4ca9-a9a8-fc48f46ad772" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              RP02 has a width of 300 and height of 100
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#326cc695-f9ad-4ca9-a9a8-fc48f46ad772 > .test-code.collapse">Code</button>
+              <span class="test-duration slow">112 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small"><span class="hljs-keyword">var</span> RPO2 = driver.findElement(webdriver.By.id(<span class="hljs-string">'google_ads_iframe_11347122/www.ajc.com-wired/online/home_9'</span>));<br><span class="hljs-keyword">var</span> height = RPO2.getAttribute(<span class="hljs-string">'height'</span>).then(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">height</span>) </span>{<br>    assert.equal(height, <span class="hljs-number">100</span>);<br>});<br><span class="hljs-keyword">var</span> width = RPO2.getAttribute(<span class="hljs-string">'width'</span>).then(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">width</span>) </span>{<br>    assert.equal(width, <span class="hljs-number">300</span>);<br>});</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>            <div id="f07c7636-c57a-4cca-8771-a3c360abb1d9" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              RP03 has a width of 300 and height of 250
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#f07c7636-c57a-4cca-8771-a3c360abb1d9 > .test-code.collapse">Code</button>
+              <span class="test-duration slow">98 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small"><span class="hljs-keyword">var</span> RP03 = driver.findElement(webdriver.By.id(<span class="hljs-string">'google_ads_iframe_11347122/www.ajc.com-wired/online/home_11'</span>));<br><span class="hljs-keyword">var</span> height = RP03.getAttribute(<span class="hljs-string">'height'</span>).then(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">height</span>) </span>{<br>    assert.equal(height, <span class="hljs-number">250</span>);<br>});<br><span class="hljs-keyword">var</span> width = RP03.getAttribute(<span class="hljs-string">'width'</span>).then(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">width</span>) </span>{<br>    assert.equal(width, <span class="hljs-number">300</span>);<br>});</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>            <div id="468ae025-6277-44c2-b265-e34ddae4f3be" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              HP AD has a valid width and height combination - &#x27;728x90&#x27;, &#x27;950x30&#x27;, &#x27;970x90&#x27;
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#468ae025-6277-44c2-b265-e34ddae4f3be > .test-code.collapse">Code</button>
+              <span class="test-duration medium">47 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small"><span class="hljs-keyword">var</span> testPassed = <span class="hljs-literal">false</span>;<br><span class="hljs-keyword">var</span> dimensions = driver.findElement(webdriver.By.id(<span class="hljs-string">'google_ads_iframe_11347122/www.ajc.com-wired/online/home_1'</span>))<br>    .getSize().then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">dimensions</span>) </span>{<br>        <span class="hljs-keyword">if</span> (dimensions.width == <span class="hljs-number">728</span> &amp;&amp; dimensions.height == <span class="hljs-number">90</span>) {<br>            testPassed = <span class="hljs-literal">true</span>;<br>        } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (dimensions.width == <span class="hljs-number">950</span> &amp;&amp; dimensions.height == <span class="hljs-number">30</span>) {<br>            testPassed = <span class="hljs-literal">true</span>;<br>        } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (dimensions.width == <span class="hljs-number">970</span> &amp;&amp; dimensions.height == <span class="hljs-number">90</span>) {<br>            testPassed = <span class="hljs-literal">true</span>;<br>        }<br>        assert.equal(testPassed, <span class="hljs-literal">true</span>,<br>            <span class="hljs-string">'Expected dimensions did not match actual! Width: '</span>+dimensions.width+<span class="hljs-string">' Height: '</span>+dimensions.height);<br>    });</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>        </div>
+              </div>
+            </div>
+        
+        
+          </div>
+        </section>
+    </div>
+
+    <footer>
+      <div class="container">
+        <p>Report generated by <a href="http://adamgruber.github.io/mochawesome/" target="_blank">mochawesome</a>.<br>Designed and built by <a href="https://github.com/adamgruber" target="_blank">adamgruber</a>. &copy;2015.</p>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/vendor.js"></script>
+    <script src="js/mochawesome.js"></script>
+  </body>
+</html>

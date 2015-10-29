@@ -1,0 +1,24 @@
+
+
+  Ad verification
+    ✓ home page should load in a timely manner (8464ms)
+    ✓ RP02 has a width of 300 and height of 100 (78ms)
+    1) RP03 has a width of 300 and height of 250
+    ✓ HP AD has a valid width and height combination - '728x90', '950x30', '970x90'
+
+
+  3 passing (10s)
+  1 failing
+
+  1) Ad verification RP03 has a width of 300 and height of 250:
+     AssertionError: '300' == 3001
+      at test/poc_scenarios.js:45:20
+      at promise.Promise.goog.defineClass.invokeCallback_ (node_modules/selenium-webdriver/lib/goog/../webdriver/promise.js:1325:14)
+      at promise.ControlFlow.goog.defineClass.goog.defineClass.abort_.error.executeNext_.execute_ (node_modules/selenium-webdriver/lib/goog/../webdriver/promise.js:2762:14)
+      at promise.ControlFlow.goog.defineClass.goog.defineClass.abort_.error.executeNext_ (node_modules/selenium-webdriver/lib/goog/../webdriver/promise.js:2744:21)
+      at goog.async.run.processWorkQueue (node_modules/selenium-webdriver/lib/goog/async/run.js:124:15)
+  From: Task: Ad verification RP03 has a width of 300 and height of 250
+      at Context.ret (node_modules/selenium-webdriver/testing/index.js:128:10)
+
+
+
