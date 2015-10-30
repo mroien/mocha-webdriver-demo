@@ -92,22 +92,17 @@ test.describe('Ad verification', function() {
             });
     });
 
-    // @todo: needs to test a single occurence - assert doesn't work
-    test.it("SWB is only showing in odd rows", function() {
+    test.it('SWB is only showing in odd rows', function() {
         var rows = driver.findElement(webdriver.By.className('jscroll-inner'))
-            .then(function(rows) {
-                if (!rows.isElementPresent({className: 'cm-storycard-ad'})) {
-                    assert.fail("SWB not present!");
-                }
-                // row assertion not working
-                console.log("Rows: "+rows.length);
-                assert.equal(rows.length, 1, "SWB occured more than once!");
-        });
+            .then(function() {
+                var temp = driver.findElements(webdriver.By.className('cm-story-card-ad'))
+                    .then(function(temp) {
+                        assert.equal(temp.length, 1);
+                    });
+            });
     });
 
     test.it('Rotator rotates in < 60 seconds', function() {
-        //driver.findElements(webdriver.By.className('.cm-slid-active_0, .cm-slide-active_1, .cm-slide-active_2, .cm-slide-active_3, .cm-slide-active_4'))
-        //    .then(function(el) {})
         function fetchActive() {
             driver.findElements(webdriver.By.className('.cm-slid-active_0, .cm-slide-active_1, .cm-slide-active_2, .cm-slide-active_3, .cm-slide-active_4'))
                 .then(function(el) {
@@ -116,17 +111,6 @@ test.describe('Ad verification', function() {
         }
         var e1 = fetchActive();
         var e2 = setTimeout(fetchActive(), 20000);
-        assert.notEqual(e1, e2, 'Rotator did not rotate fast enought!');
+        assert.notEqual(e1, e2, 'Rotator did not rotate fast enough!');
     });
-
-    //it('verify that Rotator rotates (<60 seconds)', function() {
-    //    function fetchActive() {
-    //        return driver.complexFind(".cm-slide-active_0, .cm-slide-active_1, .cm-slide-active_2, .cm-slide-active_3, .cm-slide-active_4").then(function(el) {
-    //            return el;
-    //        });
-    //    }
-    //    var e1 = fetchActive();
-    //    var e2 = setTimeout(fetchActive(), 20000);
-    //    e1.should.not.equal(e2);
-    //});
 });
