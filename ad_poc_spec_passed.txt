@@ -1,11 +1,0 @@
-
-
-  Ad verification
-    ✓ home page should load in a timely manner (9070ms)
-    ✓ RP02 has a width of 300 and height of 100 (129ms)
-    ✓ RP03 has a width of 300 and height of 250 (92ms)
-    ✓ HP AD has a valid width and height combination - '728x90', '950x30', '970x90' (50ms)
-
-
-  4 passing (10s)
-
